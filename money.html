@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="tw">
+        <meta charset="UTF-8">
+        <title>嘿!Siri ous[認真]的網站</title>
+        <!-- css[漸層背景] -->
+        <style>
+            body {
+            background-image: linear-gradient(to left, rgba(0, 136, 255, 0.8), rgb(0, 238, 255));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            }
+        </style> 
+        <!-- css[隱形文字] -->
+        <style>
+            .invisible-text {
+              max-width: 500px;
+              font-weight: bold;
+              background: -webkit-linear-gradient(
+                rgba(0, 195, 255, 0.8) ,
+                rgb(0, 238, 255) ,
+              );
+              -webkit-text-fill-color: transparent;
+            }
+          </style>
+        <!-- css[置中文字] -->
+        <style>
+            .center-text {
+              text-align: center;
+            }
+        </style>
+        <!-- css[縮小文字] -->
+        <style>
+            .title {
+              font-size: 70px; /* 可以根據需要調整大小 */
+              margin-top: 25px;
+              margin-bottom: 0px;
+              
+            }
+        </style>
+        <style>
+           .wrapper {
+           display: inline-block;
+           text-align: center;
+           width: 100%; /* 占滿可用寬度 */
+           position: relative;
+          }
+          </style>
+          <style>
+          .centered {
+           display: inline-block;
+           position: relative;
+           left: 0;
+           transform: translateX(-10%); /* 減少偏移量，讓兩者更靠近 */
+            }
+          </style>
+          <style>
+          .inline {
+             display: inline-block;
+             margin-left: 5px; /* 縮小與居中文字之間的距離 */
+             position: relative;
+             left: 0;
+            }
+          </style> 
+    </head>
+
+    <body>
+        <!-- 註解 -->
+    <p class="center-text title">歡迎您來到這個網站</p>
+    <div class="wrapper">
+      <span class="centered" style="font-size: 25px;">justin終於要認真寫網站了🎉🎉🎉</span>
+      <span class="inline invisible-text">才怪</span>
+    </div>
+    <p class="center-text" style="font-size: 25px;">justin終於要認真寫網站了🎉🎉🎉</p>
+</html>
