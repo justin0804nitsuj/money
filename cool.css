@@ -27,3 +27,38 @@
               margin-bottom: 0px;
               
             }
+            #mySidenav a {
+                position: absolute;
+                left: -95px;
+                transition: 0.3s;
+                padding: 15px;
+                width: 120px;
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                border-radius: 0 5px 5px 0;
+              }
+              
+              #mySidenav a:hover {
+                left: 0;
+              }
+              
+              #about {
+                top: 30px;
+                background-color: #555;
+              }
+              
+              #intro {
+                top: 95px;
+                background-color: #2196F3;
+              }
+              
+              #content {
+                top: 160px;
+                background-color: #12c767;
+              }
+              
+              #note {
+                top: 225px;
+                background-color: #2e5ab2
+              }
