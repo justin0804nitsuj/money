@@ -8,7 +8,6 @@
             }
 /* css[隱形文字] */
             .invisible-text {
-              max-width: 500px;
               font-weight: bold;
               background: -webkit-linear-gradient(
                 rgba(0, 195, 255, 0.8) ,
@@ -27,7 +26,8 @@
               margin-bottom: 0px;
               
             }
-            #mySidenav a {
+/* css[左側標籤] */
+              #left-tag a {
                 position: absolute;
                 left: -95px;
                 transition: 0.3s;
@@ -38,26 +38,26 @@
                 color: white;
                 border-radius: 0 5px 5px 0;
               }
-              
-              #mySidenav a:hover {
+/* css[左側標籤(當鼠標在上面時)] */
+              #left-tag a:hover {
                 left: 0;
               }
-              
+/* css[左側標籤(關於我們)] */
               #about {
                 top: 30px;
                 background-color: #555;
               }
-              
+/* css[左側標籤(簡介)] */
               #intro {
                 top: 95px;
                 background-color: #2196F3;
               }
-              
+/* css[左側標籤(主內容)] */
               #content {
                 top: 160px;
                 background-color: #12c767;
               }
-              
+/* css[左側標籤(備註)] */
               #note {
                 top: 225px;
                 background-color: #2e5ab2
