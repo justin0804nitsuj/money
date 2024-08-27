@@ -1,3 +1,7 @@
+/* css[平滑滾動] */
+html {
+  scroll-behavior: smooth;
+}
 /* css[漸層背景] */
 body {
   background-image: linear-gradient(to left, rgba(0, 136, 255, 0.8), rgb(0, 238, 255));
