@@ -66,3 +66,59 @@ body {
   top: 225px;
   background-color: #2e5ab2
 }
+/* 掉落式按鈕 */
+.dropdownbotton {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 200px; /* 設定按鈕的固定寬度 */
+}
+
+/* 調整掉落式按鈕選項的位置 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* 掉落式按鈕置中 */
+.dropdowncenter {
+  display: flex;
+  justify-content: center;
+}
+
+/* 掉落式按鈕選項 */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%; /* 選項寬度與按鈕一致 */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0; /* 選單與按鈕左對齊 */
+}
+
+/* 掉落式按鈕裡的連結 */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* 改變鼠標在連結上時連結的顏色 */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* 顯示掉落式按鈕選單 */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+/* 顯示掉落式按鈕之內容時變更下拉式按鈕內容之顏色 */
+.dropdown:hover .dropdownbotton {
+  background-color: #484545;
+}
