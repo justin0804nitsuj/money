@@ -27,11 +27,11 @@ function displayWelcomeMessage() {
     const username = getParameterByName('username');
     if (username) {
         const loginCount = localStorage.getItem(`${username}_loginCount`) || 0;
-        document.getElementById('welcome-message').textContent = `${username} 已成功登入`;
+        document.getElementById('welcome-message').textContent = `已成功登入 名稱為:${username}`;
         document.getElementById('login-count').textContent = `這是您第 ${loginCount} 次登入`;
 
         const totalLogins = localStorage.getItem('totalLogins') || 0;
-        document.getElementById('total-logins').textContent = `總登入人次：${totalLogins}`;
+        document.getElementById('total-logins').textContent = `總來訪人次：${totalLogins}`;
     } else {
         document.getElementById('welcome-message').textContent = `未提供姓名`;
     }

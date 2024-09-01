@@ -126,11 +126,11 @@ body {
 /* 歡迎訊息 */
 #welcome-message {
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 /* 登入 */
 #login-count, #total-logins {
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 30px;
 }
