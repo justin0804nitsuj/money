@@ -13,7 +13,7 @@ function login() {
         localStorage.setItem('totalLogins', totalLogins);
 
         // 導向到歡迎頁面並傳遞使用者名稱
-        window.location.href = `welcome.html?username=${encodeURIComponent(username)}`;
+        window.location.href = `main.html?username=${encodeURIComponent(username)}`;
     } else {
         alert("請輸入姓名");
     }
