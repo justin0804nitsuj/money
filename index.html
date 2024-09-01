@@ -6,13 +6,21 @@
         <title>嘿!Siri ous[認真]的網站</title>
         <meta name="description" content="沒什麼描述...">
         <link rel="stylesheet" href="cool.css">
-        <script src="count.js" defer></script>
 
     <!-- Open Graph meta 標籤 -->
     <meta property="og:image" content="images/thumbnail.png">
     <!--     <meta property="og:url" content="https://www.example.com/">   -->
     <meta property="og:type" content="website">
     </head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L3GZ13YE7Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L3GZ13YE7Q');
+</script>
 
     <body>
         <!-- 註解 -->
@@ -26,6 +34,10 @@
         <div class="visitor-count">
             來訪人次&nbsp; <span id="visit-count">0</span>
         </div>
+
+    <!-- 引用外部的 JavaScript 檔案 -->
+    <script src="count.js"></script>
+
     <!-- 最上面 -->
     <p class="center-text title">歡迎您來到這個網站</p>
     <p class="center-text" style="font-size: 40px;">提示:左邊的標籤都是可以點的喔</p>
