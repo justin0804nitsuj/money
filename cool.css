@@ -122,15 +122,3 @@ body {
 .dropdown:hover .dropdownbotton {
   background-color: #484545;
 }
-/* 來訪人次顯示區域 */
-.visitor-count {
-  position: fixed; /* 固定位置 */
-  top: 10px; /* 距離視窗上邊緣的距離 */
-  right: 10px; /* 距離視窗右邊緣的距離 */
-  background-color: rgba(0, 0, 0, 0.5); /* 背景顏色，添加透明效果 */
-  color: white; /* 文字顏色 */
-  padding: 10px; /* 內邊距 */
-  border-radius: 5px; /* 圓角邊框 */
-  font-size: 14px; /* 字體大小 */
-  z-index: 1000; /* 確保顯示在最上層 */
-}
