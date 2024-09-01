@@ -19,6 +19,12 @@ function login() {
     }
 }
 
+// 取得 URL 參數
+function getParameterByName(name) {
+    const url = new URL(window.location.href);
+    return url.searchParams.get(name);
+}
+
 // 顯示歡迎訊息與登入次數
 function displayWelcomeMessage() {
     var username = getParameterByName('username');
