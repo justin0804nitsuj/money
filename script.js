@@ -28,7 +28,7 @@ function displayWelcomeMessage() {
     if (username) {
         const loginCount = localStorage.getItem(`${username}_loginCount`) || 0;
         document.getElementById('welcome-message').textContent = `${username} 已成功登入`;
-        document.getElementById('login-count').textContent = `這是您第 ${loginCount} 次登入。`;
+        document.getElementById('login-count').textContent = `這是您第 ${loginCount} 次登入`;
 
         const totalLogins = localStorage.getItem('totalLogins') || 0;
         document.getElementById('total-logins').textContent = `總登入人次：${totalLogins}`;
