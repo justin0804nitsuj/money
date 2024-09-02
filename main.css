@@ -130,7 +130,15 @@ body {
 }
 
 /* 登入 */
-#login-count, #total-logins {
+#login-count {
   margin: 10px 0;
   font-size: 30px;
+}
+#total-visited {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 28px;
 }
