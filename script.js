@@ -7,9 +7,9 @@ function login() {
         localStorage.setItem(`${username}_loginCount`, loginCount);
 
         // 更新總登入人次
-        let totalLogins = localStorage.getItem('totalLogins') || 0;
-        totalLogins++;
-        localStorage.setItem('totalLogins', totalLogins);
+        let totalvisited = localStorage.getItem('totalvisited') || 0;
+        totalvisited++;
+        localStorage.setItem('totalvisited', totalvisited);
 
         // 導向到 main.html 並傳遞使用者名稱
         window.location.href = `main.html?username=${encodeURIComponent(username)}`;
@@ -30,8 +30,8 @@ function displayWelcomeMessage() {
         document.getElementById('welcome-message').textContent = `已成功登入 名稱為:${username}`;
         document.getElementById('login-count').textContent = `這是您第 ${loginCount} 次登入`;
 
-        const totalLogins = localStorage.getItem('totalLogins') || 0;
-        document.getElementById('total-logins').textContent = `總來訪人次：${totalLogins}`;
+        const totalvisited = localStorage.getItem('totalvisited') || 0;
+        document.getElementById('total-visited').textContent = `總來訪人次：${totalvisited}`;
     } else {
         document.getElementById('welcome-message').textContent = `未提供姓名`;
     }
