@@ -27,7 +27,7 @@ function displayWelcomeMessage() {
     const username = getParameterByName('username');
     if (username) {
         const loginCount = localStorage.getItem(`${username}_loginCount`) || 0;
-        document.getElementById('welcome-message').textContent = `已成功登入 名稱為:${username}`;
+        document.getElementById('welcome-message').textContent = `已成功登入 名稱為 ${username}`;
         document.getElementById('login-count').textContent = `這是您第 ${loginCount} 次登入`;
 
         const totalvisited = localStorage.getItem('totalvisited') || 0;

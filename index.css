@@ -6,3 +6,32 @@ body {
     background-position: center;
     background-size: cover;
     }
+.center-text {
+    text-align: center;
+      }
+/* 讓父容器成為flex容器 */
+.input-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+}
+
+input {
+    background-color: #ffffff;
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px; /* 如果想要圓角 */
+    border: 2px solid #2fe3ec; /* 控制邊框樣式 */
+}
+
+/* 控制按鈕樣式 */
+.button-behind-inputbox {
+    padding: 0 20px; /* 增加左右間距 */
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    background-color: #47b5b8; /* 按鈕背景色 */
+    color: white; /* 按鈕文字顏色 */
+    cursor: pointer; /* 鼠標移過時顯示為指針 */
+}
