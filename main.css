@@ -136,7 +136,7 @@ body {
 }
 #total-visited {
   position: fixed;
-  top: 4px;
-  right: 4px;
+  top: 0px;
+  right: 15px;
   font-size: 28px;
 }
