@@ -128,15 +128,3 @@ body {
   margin-bottom: 10px;
   font-size: 30px;
 }
-
-/* 登入 */
-#login-count {
-  margin: 10px 0;
-  font-size: 30px;
-}
-#total-visited {
-  position: fixed;
-  top: 0px;
-  right: 70px;
-  font-size: 28px;
-}
