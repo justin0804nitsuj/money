@@ -11,23 +11,31 @@
     <meta property="og:image" content="images/thumbnail.png">
     <!--     <meta property="og:url" content="https://www.example.com/">   -->
     <meta property="og:type" content="website">
+    <!-- 引入 JavaScript 文件 -->
+    <script src="script.js"></script>
     </head>
 
     <body>
         <!-- 註解 -->
     <p class="center-text" id="welcome-message"></p>
-    <!-- 引入 JavaScript 文件 -->
-    <script src="script.js"></script>
     <script>
-      // 頁面加載時顯示歡迎訊息與登入次數
+      // 頁面加載時顯示歡迎訊息
         displayWelcomeMessage();
      </script>
-        <div id="left-tag">
-          <a href="#abouttohere" id="about">關於我們</a>
-          <a href="#introtohere" id="intro">網站簡介</a>
-          <a href="#contenttohere" id="content">主內容</a>
-          <a href="#notetohere" id="note">備註</a>
-        </div>
+
+    <!-- 漢堡按鈕 -->
+    <div class="menu-btn" id="menu-btn">
+      <div class="menu-btn__burger"></div>
+    </div>
+    <!-- 側邊選單 -->
+    <nav class="nav" id="nav">
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#abouttohere">關於我們</a></li>
+        <li class="nav__item"><a href="#introtohere">網站簡介</a></li>
+        <li class="nav__item"><a href="#contenttohere">主內容</a></li>
+        <li class="nav__item"><a href="#notetohere">備註</a></li>
+      </ul>
+    </nav>
     <!-- 最上面 -->
     <p class="center-text title">歡迎您來到這個網站</p>
     <p class="center-text" style="font-size: 40px;">提示:左邊的標籤都是可以點的喔</p>
