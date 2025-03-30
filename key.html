@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>鍵盤偵測示例</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #output {
+      font-size: 24px;
+      margin-top: 20px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1>請按下任意鍵</h1>
+  <div id="output"></div>
+
+  <script>
+    // 監聽整個文件的 keydown 事件
+    document.addEventListener('keydown', function(event) {
+      // event.key 可取得使用者按下的鍵
+      const outputDiv = document.getElementById('output');
+      outputDiv.textContent = '你按下了：' + event.key;
+    });
+  </script>
+</body>
+</html>
