@@ -1,0 +1,32 @@
+    /* 讓 html 與 body 撐滿全螢幕，並清除預設 margin */
+    html, body {
+        height: 100%;
+        margin: 0;
+      }
+      /* 使用 Flexbox 讓 body 內的內容水平與垂直置中 */
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+      }
+      /* container 用來包住所有主要內容，文字置中 */
+      .container {
+        text-align: center;
+      }
+      #display {
+        font-size: 24px;
+        margin: 20px;
+        color: blue;
+        min-height: 30px;
+      }
+      #timerDisplay {
+        font-size: 18px;
+        color: red;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+      }

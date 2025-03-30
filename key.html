@@ -2,31 +2,16 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>鍵盤偵測示例</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    #output {
-      font-size: 24px;
-      margin-top: 20px;
-      color: blue;
-    }
-  </style>
+  <title>5秒鍵盤偵測與重置範例</title>
+  <link rel="stylesheet" href="key.css">
 </head>
 <body>
-  <h1>請按下任意鍵</h1>
-  <div id="output"></div>
-
-  <script>
-    // 監聽整個文件的 keydown 事件
-    document.addEventListener('keydown', function(event) {
-      // event.key 可取得使用者按下的鍵
-      const outputDiv = document.getElementById('output');
-      outputDiv.textContent = '你按下了：' + event.key;
-    });
-  </script>
+  <div class="container">
+    <h1>請在5秒內按鍵</h1>
+    <div id="display"></div>
+    <div id="timerDisplay">剩餘時間：5秒</div>
+    <button id="clearBtn">清空並重置</button>
+  </div>
+  <script src="key.js"></script>
 </body>
 </html>
